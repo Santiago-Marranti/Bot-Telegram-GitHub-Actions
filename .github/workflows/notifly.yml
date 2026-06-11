@@ -3,7 +3,7 @@ name: Notificación nocturna
 
 on:
   schedule:
-    - cron: '* * * * *'  # 5am UTC = 2am Argentina (ART = UTC-3)
+    - cron: '*/5 * * * *'  # 5am UTC = 2am Argentina (ART = UTC-3)
   workflow_dispatch:      # permite ejecutarlo manualmente también
 
 jobs:
